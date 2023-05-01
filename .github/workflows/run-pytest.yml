@@ -41,16 +41,16 @@ jobs:
 #       - uses: harmon758/postgresql-action@v1
 #         with:
 #           postgresql version: '14'
-      - name: Run migrations
-        working-directory: ./firstvoices
-        env:
-          ALLOWED_ORIGIN: ${{ secrets.ALLOWED_ORIGIN }}
-          DB_DATABASE: ${{ secrets.DB_DATABASE }}
-          DB_HOST: ${{ secrets.DB_HOST }}
-          DB_PORT: ${{ secrets.DB_PORT }}
-          DB_USERNAME: ${{ secrets.DB_USERNAME }}
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-        run: python manage.py migrate
+#       - name: Run migrations
+#         working-directory: ./firstvoices
+#         env:
+#           ALLOWED_ORIGIN: ${{ secrets.ALLOWED_ORIGIN }}
+#           DB_DATABASE: ${{ secrets.DB_DATABASE }}
+#           DB_HOST: ${{ secrets.DB_HOST }}
+#           DB_PORT: ${{ secrets.DB_PORT }}
+#           DB_USERNAME: ${{ secrets.DB_USERNAME }}
+#           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+#         run: python manage.py migrate
       - name: Run tests
         working-directory: ./firstvoices
         env:
