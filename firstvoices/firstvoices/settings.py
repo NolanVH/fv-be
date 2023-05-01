@@ -152,7 +152,7 @@ JWT = jwt.config()
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    os.getenv('ALLOWED_ORIGIN'),
+    os.getenv("ALLOWED_ORIGIN"),
 ]
 
 LANGUAGE_CODE = "en-ca"
