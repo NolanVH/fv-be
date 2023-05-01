@@ -23,8 +23,8 @@ jobs:
           POSTGRES_USER: ${{ secrets.DB_USERNAME }}
           POSTGRES_PASSWORD: ${{ secrets.DB_PASSWORD }}
           POSTGRES_DB: test_fv_be
-          DB_PORT: ${{ secrets.DB_PORT }}
-        ports: ${{ env.DB_PORT }}:${{ env.DB_PORT }}
+        ports: 
+          - 5432:5432
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
     
     steps:
