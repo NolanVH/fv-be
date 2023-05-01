@@ -6,7 +6,7 @@ Backend for the FirstVoices application
 [![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=First-Peoples-Cultural-Council_fv-be&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=First-Peoples-Cultural-Council_fv-be)
 
-License: Apache Software License 2.0
+License: Apache Software License 2.0 
 
 ___
 
