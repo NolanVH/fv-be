@@ -22,4 +22,4 @@ class TestSiteModel:
         categories = site.category_set.all()
         default_categories = load_data("default_categories.json")
 
-        assert len(default_categories) == len(categories) + 1
+        assert len(default_categories) == len(categories)
