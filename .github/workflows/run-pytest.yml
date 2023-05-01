@@ -45,8 +45,7 @@ jobs:
         working-directory: ./firstvoices
         env:
           ALLOWED_ORIGIN: ${{ secrets.ALLOWED_ORIGIN }}
-        run: echo $ALLOWED_ORIGIN
-#         run: python manage.py migrate
+        run: python manage.py migrate
       - name: Run tests
         working-directory: ./firstvoices
         run: |
