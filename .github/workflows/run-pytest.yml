@@ -45,6 +45,7 @@ jobs:
         working-directory: ./firstvoices
         env:
           ALLOWED_ORIGIN: ${{ secrets.ALLOWED_ORIGIN }}
+          DB_HOST: ${{ secrets.DB_HOST }}
         run: python manage.py migrate
       - name: Run tests
         working-directory: ./firstvoices
